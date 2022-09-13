@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtmensaje"
+        android:layout_width="271dp"
+        android:layout_height="87dp"
+        android:ems="10"
+        android:hint="Escribe tu mensaje aquí"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="442dp" />
+
+    <EditText
+        android:id="@+id/txtnombre"
+        android:layout_width="119dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Nombre"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="186dp" />
+
+    <EditText
+        android:id="@+id/txtapellido"
+        android:layout_width="119dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Apellido"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="186dp" />
+
+    <EditText
+        android:id="@+id/txtcontacto"
+        android:layout_width="123dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Ponte en contacto"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#883FB5"
+        android:text="ENVIAR"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="560dp" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="119dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Email"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="265dp" />
+
+    <EditText
+        android:id="@+id/txttelefono"
+        android:layout_width="119dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="Teléfono"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="265dp" />
+
+    <EditText
+        android:id="@+id/txtdireccion"
+        android:layout_width="311dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:text="Dirección"
+        app:layout_constraintBottom_toTopOf="@+id/txtmensaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.905" />
+
+</android.support.constraint.ConstraintLayout>
